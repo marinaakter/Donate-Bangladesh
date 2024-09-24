@@ -89,3 +89,17 @@ document.getElementById('btn-donate-3').addEventListener('click', function(event
 });
 
 
+
+const toggle = document.querySelectorAll('.toggle-status')
+toggle.forEach(button => {
+    button.addEventListener('click', () => {
+        toggle.forEach(btn => btn.classList.remove('bg-green-300'));
+        button.classList.add('bg-green-300');
+        button.classList.remove('bg-gray-300');
+        toggle.forEach(btn => {
+            if (btn !== button) {
+                btn.classList.add('bg-gray-300');
+            }
+        });
+    });
+});
