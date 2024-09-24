@@ -1,0 +1,124 @@
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="w-full bg-orange-50 p-5 sticky top-0 z-50">
+      <!-- Navbar section -->
+      <div class="max-w-screen-xl mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <button
+              class="bg-green-400 hover:bg-green-300 duration-500 px-6 py-2 rounded-lg"
+              onclick="blog()"
+            >
+              Blog
+            </button>
+          </div>
+          <div class="navbar-center flex gap-2">
+            <img class="w-8" src="./assets/logo.png" alt="" />
+            <h1 class="text-xl font-bold">Donate Bangladesh</h1>
+          </div>
+          <div class="navbar-end flex gap-2">
+            <img src="./assets/coin.png" alt="" />
+            <h4 id="total-amount" class="font-bold">5500 BDT</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-screen-xl mx-auto space-y-3">
+      <h1 class="text-3xl font-extrabold mx-5 mt-8">Important FAQ</h1>
+      <div class="mx-5 space-y-3">
+        <!-- FAQ 1 -->
+        <div class="collapse collapse-arrow border">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The Document Object Model (DOM) is a programming interface for web
+              documents. It represents the structure of an HTML or XML document
+              as a tree of objects, where each node in the tree is an object
+              that represents a part of the document (such as elements,
+              attributes, text content, etc.).
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="collapse collapse-arrow border">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              To select an element from the Document Object Model (DOM), you can
+              use a variety of methods provided by the DOM API in JavaScript.
+              Each method is suited for different types of selections, such as
+              by id, class, tag name, or using CSS selectors.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="collapse collapse-arrow border">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Event delegation is a powerful technique in JavaScript where you
+              attach a single event listener to a parent element rather than
+              adding individual event listeners to multiple child elements. The
+              event listener on the parent element can handle events that are
+              triggered by its child elements, thanks to a feature called event
+              bubbling.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="collapse collapse-arrow border">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <ol>
+              <li>
+                Get an attributes: <br />
+                <p class="font-bold">
+                  let value = element.getAttribute("attributeName");
+                </p>
+              </li>
+              <li>
+                Set an attributes <br />
+                <p class="font-bold">
+                  element.setAttribute("attributeName", "value");
+                </p>
+              </li>
+              <li>
+                Remove an attributes <br />
+                <p class="font-bold">
+                  element.removeAttribute("attributeName");
+                </p>
+              </li>
+              <li></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

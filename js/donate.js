@@ -1,3 +1,4 @@
+/* 
 document.getElementById('btn-donate').addEventListener('click',function(event){
     event.preventDefault
     const totalAmount = getTextFieldById('total-amount')
@@ -21,6 +22,13 @@ document.getElementById('btn-donate').addEventListener('click',function(event){
     document.getElementById('total-amount').innerText = `${currentAmount} BDT`
     document.getElementById('amount-for-noakhali').innerText = `${currentAmountForNoakhali} BDT`
     
-    
-    
 })
+*/
+
+function donate(){
+    const totalAmount = getTextFieldById('total-amount')
+    const donationAmount = getInputFieldById('donation-amount')  
+    const totalDonated = getTextFieldById('total-donated')
+    return totalAmount, donationAmount, totalDonated
+    
+}
