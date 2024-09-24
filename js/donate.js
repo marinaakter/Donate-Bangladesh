@@ -82,3 +82,18 @@ document.getElementById('btn-donate-3').addEventListener('click',function(event)
     document.getElementById('amount-for-qouta').innerText = `${currentAmountForQuota} BDT`
     
 })
+
+
+//History section
+const div = document.createElement('div')
+div.classList.add('text-red-500')
+div.innerHTML = `
+            <div class="flex items-center space-x-3 bg-red-600 text-white rounded-lg p-3 m-auto">
+            <h6 class="text-lg font-bold">Cash Out</h6>
+            
+            </div>
+            `
+
+
+
+document.getElementById('history-section').appendChild(div)
