@@ -24,7 +24,7 @@ function addDonationHistory(donatedAmount, title) {
     historyDiv.classList.add('donation-history-item', 'p-5', 'border', 'rounded-lg', 'mb-2');
 
     const donationTime = `
-        <p><strong>${donatedAmount} Taka< is Donated for ${title}</strong></p>
+        <p><strong>${donatedAmount} Taka is Donated for ${title}</strong></p>
         <p class='text-gray-600'>Date: ${new Date().toLocaleString()}</p>
     `;
     
