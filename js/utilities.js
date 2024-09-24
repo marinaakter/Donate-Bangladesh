@@ -17,3 +17,17 @@ function showSectionById(id){
     document.getElementById('history-section').classList.add('hidden')
     document.getElementById(id).classList.remove('hidden')
 }
+
+
+function addDonationHistory(donatedAmount, title) {
+    const historyDiv = document.createElement('div');
+    historyDiv.classList.add('donation-history-item', 'p-5', 'border', 'rounded-lg', 'mb-2');
+
+    const donationTime = `
+        <p><strong>${donatedAmount} Taka< is Donated for ${title}</strong></p>
+        <p class='text-gray-600'>Date: ${new Date().toLocaleString()}</p>
+    `;
+    
+    historyDiv.innerHTML = donationTime;
+    document.getElementById('history-section').appendChild(historyDiv);
+}
